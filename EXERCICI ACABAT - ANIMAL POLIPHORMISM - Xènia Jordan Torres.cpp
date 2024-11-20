@@ -19,6 +19,7 @@ public:
     {
         cout << "El gat diu: MIAU MIAU MIAU" << endl;
     }
+~Cat() {}
 };
 
 class Dog : public Animal {
@@ -27,6 +28,7 @@ public:
     {
         cout << "El gos diu: WOOF WOOF WOOF" << endl;
     }
+~Dog() {}
 };
 
 int main()
@@ -36,6 +38,9 @@ int main()
 
     gatito.speak();
     perrito.speak();
+delete gatito;
+delete perrito;
+    
     return 0;
 }
 
